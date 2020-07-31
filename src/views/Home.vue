@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="start-button-wrapper">
+      <router-link to="/login" class="home__start-btn btn-primary">시작하기</router-link>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  }
+  components: {}
 };
 </script>
+
+<style>
+.start-button-wrapper {
+  margin-top: 50px;
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-content: center;
+}
+</style>
